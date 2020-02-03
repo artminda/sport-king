@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body{
+	background: #f6f6f6;
+}
+section.content{
+	padding-top: 40px;
+}
+section.content .container>.row{
+	background: #fff;
+	border-radius: 8px;
+	margin: 0;
+	padding: 30px 15px;
+}
+section.content h2{
+	font-size: 24px;
+	margin-bottom: 0;
+}
+section.content p+h2{
+	margin-top: 30px;
+}
+@media (min-width: 992px){
+	section.content .container>.row{
+		padding: 70px;
+	}
+}

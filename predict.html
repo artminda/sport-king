@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <link rev="made" href="mailto:yaiivisual@gmail.com">
+    <link rev="made" href="http://www.yaii.com.tw/">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="imagetoolbar" content="false">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="refresh" content="600"/>
+    <meta http-equiv="window-target" content="_top">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="NEXTOP">
+    <meta name="company" content="運彩貓">
+    <meta name="copyright" content="2017 © 運彩貓 │ All Rights Reserved.">
+    <meta name="creation-date" content="05-Dec-2016 09:48:32 GMT+8">
+    <meta name="description" content="贏運彩，上運彩貓。獲利折線圖，清楚掌控贏球趨勢，日冠軍，周冠軍，讓彩迷簡單跟著贏家「貓」運彩">
+    <meta name="distribution" content="global">
+    <meta name="keywords"
+          content="分析網,運彩分析網,運動分析網,運動分析,NBA分析,日棒分析,美棒分析,足球分析,中職分析,美國職棒分析,運動分析,台灣運彩,運彩,運動彩券,NBA,MLB, 棒球, 籃球, 足球, 網球, 中華職棒,日本職棒,美國職棒,美國職籃,英超,西甲,德甲,義甲,法甲,即時比分,運彩分析,運動彩,賽事預測,韓國職棒,墨西哥棒球,韓國女籃,日本職籃,中國職籃,韓國職籃,俄羅斯冰球,美式足球,網球,KBO,KHL,NHL,NPB,CPBL,NFL,WNBA">
+    <meta name="revisit-after" content="1 days">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:admins" content=""/>
+    <meta property="og:description" content="即時賠率更新，萬人彩迷虛擬點數最真實預測，最多運彩高手，都在台灣第一運彩資訊分享平台"/>
+    <meta property="og:image" content="images/share_img.html"/>
+    <meta property="og:site_name" content="運彩貓"/>
+    <meta property="og:title" content="運彩貓-台灣運彩資訊平台"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="master.html"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/filter.css">
+    <link rel="stylesheet" type="text/css" href="css/predict.css">
+    <script type="text/javascript">
+        //每5分自動重新整理網頁
+        var NowDate = new Date();
+        var m = NowDate.getMinutes();
+        var s = NowDate.getSeconds();
+        var show_value = (300 - (m * 60 + s) % 300) * 1000;
+        setTimeout("location.reload();", show_value); // 5分、10分時更新資料
+        // setTimeout("location.reload();",300000); // 1000 * 60 * 5
+    </script>
+    <title>賽事預測 :: 運彩貓-台灣運彩資訊平台</title>
+</head>
+<body>
+<div id="wrapper">
+
+    <div id="sidebar-wrapper" data-right="2017 © 運彩貓 │ All Rights Reserved.">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                    專家名師 </a>
+            </li>
+
+            <li>
+                <a href="master.html">
+                    尋找高手 </a>
+            </li>
+            <li>
+                <a href="predict.html">
+                    賽事預測 </a>
+            </li>
+
+            <li class="social">
+                <a class="fb-button" href="https://www.facebook.com/wwincat/?fref=ts" target="_blank">facebook</a>
+                <a class="line-button" href="line://ti/p/@iuv6343n" target="_blank">line</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="page-content-wrapper">
+        <nav class="nav-scroll">
+            <div class="container">
+                <div class="navMain">
+                    <a href="#menu-toggle" class="toggle" id="menu-toggle">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </a>
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="sportcat-logo">
+                    </a>
+                    <div class="login">
+                        <div class="not-log">
+                            <a onclick="$('#tform1').removeClass('show_hide');$('#tform2').addClass('show_hide');$('#tform3').addClass('show_hide');"
+                               href="javascript:;" id="login" data-toggle="modal" data-target="#modal-cat">
+                                <div style="background-image:url(images/icon_login.png); "></div>
+                                <span class="text-nologin ">登入 / 註冊</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="title">
+            <div class="container">
+                <div class="conditions mb" data-toggle="modal" data-target="#modal-pre-conditions">infomation</div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h3 class="styled">賽事預測</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="mask"></div>
+        </section>
+        <section class="result">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="weekly-con">
+                            <div class="poi"><span class="ttl">本周點數 :</span><span class="num">100000</span></div>
+                            <div class="res"><span class="ttl">本周結果 : </span><span class="num minus">0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fliter-menu">
+            <div class="container">
+                <ul class="fil-1st clearfix">
+                    <li class="item bs " onClick="window.location.href='predicteb30.html?aclassid=1'">
+                        <div class="icon"><span></span></div>
+                        <div class="txt">棒球</div>
+                    </li>
+                    <li class="item bk current">
+                        <div class="icon"><span></span></div>
+                        <div class="txt">籃球</div>
+                    </li>
+                    <li class="item rb " onClick="window.location.href='predicte355.html?aclassid=3'">
+                        <div class="icon"><span></span></div>
+                        <div class="txt">美足</div>
+                    </li>
+                    <li class="item pk " onClick="window.location.href='predicte223.html?aclassid=4'">
+                        <div class="icon"><span></span></div>
+                        <div class="txt">冰球</div>
+                    </li>
+                    <li class="item fb " onClick="window.location.href='predict5f61.html?aclassid=5'">
+                        <div class="icon"><span></span></div>
+                        <div class="txt">足球</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="conditions dk" data-toggle="modal" data-target="#modal-pre-conditions">infomation</div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+
+                        <div class="m-filter-sub multi mb">
+                            <div class="fil-2nd" data-toggle="modal" data-target="#modal-fil-2nd">
+                                <div class="main"><div class="txtbox"><span id="ballgame_title" name="ballgame_title" class="txt">韓職籃</span><span id="ballgame_num" name="ballgame_num" class="amo">2</span></div></div>
+                            </div>
+
+                        </div>
+
+                        <div class="filter-sub multi dk" style="min-height: 136px;">
+                            <ul id="sballgame" name="sballgame" class="fil-2nd">
+                                <li class="current">
+                                    <div class="main">
+                                        <div class="txtbox"><span class="txt">韓職籃</span><span class="amo">2</span></div>
+                                        <div class="active-bg"></div>
+                                    </div>
+                                </li>
+                                <li onclick="window.location.href='?aclassid=2&amp;agameid=1243'">
+                                    <div class="main">
+                                        <div class="txtbox"><span class="txt">日職籃</span><span class="amo">9</span></div>
+                                        <div class="active-bg"></div>
+                                    </div>
+                                </li>
+                                <li onclick="window.location.href='?aclassid=2&amp;agameid=1244'">
+                                    <div class="main">
+                                        <div class="txtbox"><span class="txt">中國CBA</span><span class="amo">3</span></div>
+                                        <div class="active-bg"></div>
+                                    </div>
+                                </li>
+                                <li onclick="window.location.href='?aclassid=2&amp;agameid=1244'">
+                                    <div class="main">
+                                        <div class="txtbox"><span class="txt">SBL</span><span class="amo">3</span></div>
+                                        <div class="active-bg"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-10">
+                        <div class="pre-table general">
+                            <div class="thead">
+                                <div class="m-row-tp">
+                                    <div class="col-1st"><span>全場</span></div>
+                                    <div class="col-2nd dk"><span>球隊資訊</span></div>
+                                </div>
+                                <div class="m-row-bm">
+                                    <div class="col-3rd dk"><div class="main">台式國際盤</div><div class="sub play-1">讓分</div><div class="sub play-2">大小</div></div>
+                                    <div class="col-4th dk"><div class="main">運彩國際盤</div><div class="sub play-1">讓分</div><div class="sub play-2">大小</div></div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <ul id="sballteam" name="sballteam">
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">新瀉天鵝</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">川崎雷霆勇者(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','新瀉天鵝','川崎雷霆勇者(主)',1,'0.95','8630756','','3+95',1,390233);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','新瀉天鵝','川崎雷霆勇者(主)',2,'0.95','8630756','','3+95',1,390233);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">3+95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','新瀉天鵝','川崎雷霆勇者(主)',1,'0.95','8630757','156+5',1,390233);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">156+5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','新瀉天鵝','川崎雷霆勇者(主)',2,'0.95','8630757','156+5',1,390233);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','新瀉天鵝','川崎雷霆勇者(主)',1,'0.95','8636869','','2.5',2,390233);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','新瀉天鵝','川崎雷霆勇者(主)',2,'0.95','8636869','','2.5',2,390233);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">2.5</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','新瀉天鵝','川崎雷霆勇者(主)',1,'0.95','8636870','156',2,390233);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">156</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','新瀉天鵝','川崎雷霆勇者(主)',2,'0.95','8636870','156',2,390233);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">名古屋鑽石海豚</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">大阪七福神(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','名古屋鑽石海豚','大阪七福神(主)',1,'0.95','8630762','4+5','',1,390234);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">4+5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','名古屋鑽石海豚','大阪七福神(主)',2,'0.95','8630762','4+5','',1,390234);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','名古屋鑽石海豚','大阪七福神(主)',1,'0.95','8630763','150+95',1,390234);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">150+95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','名古屋鑽石海豚','大阪七福神(主)',2,'0.95','8630763','150+95',1,390234);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','名古屋鑽石海豚','大阪七福神(主)',1,'0.95','8636867','4','',2,390234);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">4</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','名古屋鑽石海豚','大阪七福神(主)',2,'0.95','8636867','4','',2,390234);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','名古屋鑽石海豚','大阪七福神(主)',1,'0.95','8636868','149.5',2,390234);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">149.5</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','名古屋鑽石海豚','大阪七福神(主)',2,'0.95','8636868','149.5',2,390234);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">北海道風神</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">豐田汽車(東京電擊)(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','北海道風神','豐田汽車(東京電擊)(主)',1,'0.95','8630748','','15+5',1,390235);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','北海道風神','豐田汽車(東京電擊)(主)',2,'0.95','8630748','','15+5',1,390235);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">15+5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','北海道風神','豐田汽車(東京電擊)(主)',1,'0.95','8630749','151+5',1,390235);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">151+5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','北海道風神','豐田汽車(東京電擊)(主)',2,'0.95','8630749','151+5',1,390235);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','北海道風神','豐田汽車(東京電擊)(主)',1,'0.95','8636865','','13',2,390235);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','北海道風神','豐田汽車(東京電擊)(主)',2,'0.95','8636865','','13',2,390235);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">13</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','北海道風神','豐田汽車(東京電擊)(主)',1,'0.95','8636866','151',2,390235);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">151</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','北海道風神','豐田汽車(東京電擊)(主)',2,'0.95','8636866','151',2,390235);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">愛信三河海馬</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">橫濱海盜(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','愛信三河海馬','橫濱海盜(主)',1,'0.95','8630758','7+95','',1,390236);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">7+95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','愛信三河海馬','橫濱海盜(主)',2,'0.95','8630758','7+95','',1,390236);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','愛信三河海馬','橫濱海盜(主)',1,'0.95','8630759','157-95',1,390236);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">157-95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','愛信三河海馬','橫濱海盜(主)',2,'0.95','8630759','157-95',1,390236);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','愛信三河海馬','橫濱海盜(主)',1,'0.95','8636859','6.5','',2,390236);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">6.5</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','愛信三河海馬','橫濱海盜(主)',2,'0.95','8636859','6.5','',2,390236);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','愛信三河海馬','橫濱海盜(主)',1,'0.95','8636860','157.5',2,390236);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">157.5</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','愛信三河海馬','橫濱海盜(主)',2,'0.95','8636860','157.5',2,390236);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">沖繩金帝皇</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">京都創榮(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','沖繩金帝皇','京都創榮(主)',1,'0.95','8630752','1-5','',1,390237);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">1-5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','沖繩金帝皇','京都創榮(主)',2,'0.95','8630752','1-5','',1,390237);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','沖繩金帝皇','京都創榮(主)',1,'0.95','8630753','146-95',1,390237);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">146-95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','沖繩金帝皇','京都創榮(主)',2,'0.95','8630753','146-95',1,390237);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','沖繩金帝皇','京都創榮(主)',1,'0.95','8636863','1','',2,390237);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">1</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','沖繩金帝皇','京都創榮(主)',2,'0.95','8636863','1','',2,390237);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','沖繩金帝皇','京都創榮(主)',1,'0.95','8636864','146.5',2,390237);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">146.5</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','沖繩金帝皇','京都創榮(主)',2,'0.95','8636864','146.5',2,390237);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">澀谷陽光搖滾</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">千葉噴氣機(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','澀谷陽光搖滾','千葉噴氣機(主)',1,'0.95','8630760','','14+95',1,390238);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','澀谷陽光搖滾','千葉噴氣機(主)',2,'0.95','8630760','','14+95',1,390238);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">14+95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','澀谷陽光搖滾','千葉噴氣機(主)',1,'0.95','8630761','156+95',1,390238);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">156+95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','澀谷陽光搖滾','千葉噴氣機(主)',2,'0.95','8630761','156+95',1,390238);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','澀谷陽光搖滾','千葉噴氣機(主)',1,'0.95','8636873','','13.5',2,390238);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','澀谷陽光搖滾','千葉噴氣機(主)',2,'0.95','8636873','','13.5',2,390238);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">13.5</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','澀谷陽光搖滾','千葉噴氣機(主)',1,'0.95','8636874','155.5',2,390238);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">155.5</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','澀谷陽光搖滾','千葉噴氣機(主)',2,'0.95','8636874','155.5',2,390238);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">櫪木王道</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">秋田北部喜悅(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','櫪木王道','秋田北部喜悅(主)',1,'0.95','8630746','12-5','',1,390239);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">12-5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','櫪木王道','秋田北部喜悅(主)',2,'0.95','8630746','12-5','',1,390239);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','櫪木王道','秋田北部喜悅(主)',1,'0.95','8630747','145-5',1,390239);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">145-5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','櫪木王道','秋田北部喜悅(主)',2,'0.95','8630747','145-5',1,390239);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','櫪木王道','秋田北部喜悅(主)',1,'0.95','8636875','12','',2,390239);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">12</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','櫪木王道','秋田北部喜悅(主)',2,'0.95','8636875','12','',2,390239);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','櫪木王道','秋田北部喜悅(主)',1,'0.95','8636876','145',2,390239);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">145</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','櫪木王道','秋田北部喜悅(主)',2,'0.95','8636876','145',2,390239);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">富山松雞</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">三遠新鳳凰城(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','富山松雞','三遠新鳳凰城(主)',1,'0.95','8630750','3+95','',1,390240);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">3+95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','富山松雞','三遠新鳳凰城(主)',2,'0.95','8630750','3+95','',1,390240);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','富山松雞','三遠新鳳凰城(主)',1,'0.95','8630751','164+5',1,390240);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">164+5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','富山松雞','三遠新鳳凰城(主)',2,'0.95','8630751','164+5',1,390240);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','富山松雞','三遠新鳳凰城(主)',1,'0.95','8636871','2.5','',2,390240);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">2.5</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','富山松雞','三遠新鳳凰城(主)',2,'0.95','8636871','2.5','',2,390240);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','富山松雞','三遠新鳳凰城(主)',1,'0.95','8636872','164',2,390240);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">164</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','富山松雞','三遠新鳳凰城(主)',2,'0.95','8636872','164',2,390240);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m-row-tp">
+                                            <div class="col-1st">01-30<br>18:05</div>
+                                            <div class="col-2nd">
+                                                <div class="item team">福岡新銳</div>
+                                                <div class="item">V.S.</div>
+                                                <div class="item team">滋賀湖星(主)</div>
+                                            </div>
+                                        </div>
+                                        <div class="m-row-bm">
+                                            <div class="m-th">
+                                                <div class="row-tp"></div>
+                                                <div class="row-pl play-1"><span>讓分</span></div>
+                                                <div class="row-pl play-2"><span>大小</span></div>
+                                            </div>
+                                            <div class="m-td col-3rd opt-type">
+                                                <div class="row-tp ttl">台式國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','福岡新銳','滋賀湖星(主)',1,'0.95','8630754','','2+5',1,390241);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','福岡新銳','滋賀湖星(主)',2,'0.95','8630754','','2+5',1,390241);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">2+5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','福岡新銳','滋賀湖星(主)',1,'0.95','8630755','143+5',1,390241);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">143+5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','福岡新銳','滋賀湖星(主)',2,'0.95','8630755','143+5',1,390241);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-td col-4th opt-type">
+                                                <div class="row-tp ttl">運彩國際盤</div>
+                                                <div class="row-pl opt-paly play-1">
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','福岡新銳','滋賀湖星(主)',1,'0.95','8636861','','2',2,390241);">
+                                                        <div class="left"><span>客</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_tai_fun('日職籃-全場讓分','福岡新銳','滋賀湖星(主)',2,'0.95','8636861','','2',2,390241);">
+                                                        <div class="left"><span>主</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">2</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-pl opt-paly play-2">
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','福岡新銳','滋賀湖星(主)',1,'0.95','8636862','143',2,390241);">
+                                                        <div class="left"><span>大</span></div>
+                                                        <div class="right">
+                                                            <span class="sco">143</span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option " onclick="bet_int_fun('日職籃-全場大小','福岡新銳','滋賀湖星(主)',2,'0.95','8636862','143',2,390241);">
+                                                        <div class="left"><span>小</span></div>
+                                                        <div class="right">
+                                                            <span class="sco"></span>
+                                                            <span class="odd">1.95</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clearfix"></div>
+        <footer class="footer hidden-xs hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">2017 © 運彩貓 │ All Rights Reserved.|<a href="privacy.html">服務條款與隱私政策</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#page-content-wrapper" id="gotop" class="scrol"></a>
+    </div>
+</div>
+<div class="modal fade" id="modal-sm" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <p>確定購買</p>
+                <p>貓幣<span class="cat"></span>(<span class="nt"></span>)</p>
+                <input type="hidden" id="stored_nt" name="stored_nt">
+                <input type="hidden" id="stored_cat" name="stored_cat">
+                <button onClick="document.location.href='https://wwincat.com/member/stored_1?snt='+$('#stored_nt').val()+'&scat='+$('#stored_cat').val()"
+                        class="btn btn-block">確定！前往結帳
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade md-pre md-event" id="modal-evt-condition" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <h4 class="modal-title"><span class="title-txt"><img src="images/event_nba_ttl.png" alt=""></span><span
+                        class="mask"></span></h4>
+                <h5 class="subttl">
+                    總獎金保證<span class="txtB"></span>元
+                </h5>
+                <div class="mainEvent-content">
+                    <div class="event-table">
+                        <div class="event-tr">
+                            <div class="event-td ttl"><span class="dot"></span>給獎方式</div>
+                            <div class="event-td"></div>
+                        </div>
+                        <div class="event-tr">
+                            <div class="event-td ttl"><span class="dot"></span>入場費</div>
+                            <div class="event-td"> 貓幣</div>
+                        </div>
+                        <div class="event-tr">
+                            <div class="event-td ttl"><span class="dot"></span>比賽時間</div>
+                            <div class="event-td"></div>
+                        </div>
+                        <div class="event-tr event-rules">
+                            <div class="event-td ttl"><span class="dot"></span>規則</div>
+                            <div class="event-td"></div>
+                        </div>
+                    </div>
+                    <div class="joinGo">
+                        <a href="javascript:;" onClick="doing_add_show(,)">
+
+                            <div class="ballImg"><span class="pplNum"> <small>人</small></span></div>
+                            <div class="goImg"><img src="images/event_nba_Go.png" alt="報名去"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer at-bottom">
+                    <a href="javascript: void(0);">
+                        <div class="form-check">
+                            <input class="checkbox checkboxNBA" type="checkbox" id="checkbox"
+                                   onclick="condition_fun(this);">
+                            <label class="checkbox-label" for="checkbox">今日不再顯示</label>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="show_confirm" name="show_confirm" data-toggle="modal" data-target="#confirm_message"></div>
+<div class="modal fade" id="confirm_message" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        onClick="reload_fun()"></button>
+                <p id="confirm_value" name="confirm_value">123</p>
+                <button type="button" id="confirm_define" name="confirm_define" onClick="" class="btn btn-block">確定
+                </button>
+                <button type="button" id="confirm_close" name="confirm_close" data-dismiss="modal" aria-label="Close"
+                        onClick="reload_fun()" class="btn btn-block">取消
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="doing_stored" name="doing_stored" value="index.html">
+
+
+<div id="show_bet_tai" name="show_bet_tai" data-toggle="modal" data-target="#modal-bet-tai"></div>
+<div class="modal fade md-pre md-betting bet-tai" id="modal-bet-tai" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+
+                <div class="step-bet active">
+                    <h4 class="modal-title"><span id="show_bet_tai_1" name="show_bet_tai_1">NBA-全場讓分</span><span
+                            class="mask"></span></h4>
+                    <div class="battle">
+                        <div id="show_bet_tai_2" name="show_bet_tai_2" class="item team">夏洛特黃蜂<span
+                                class="odds">-3</span></div>
+                        <div class="item">V.S.</div>
+                        <div id="show_bet_tai_3" name="show_bet_tai_3" class="item team">明尼蘇達灰狼(主)</div>
+                    </div>
+                    <div class="ur-bet">
+                        <div class="icon">投注</div>
+                        <div id="show_bet_tai_4" name="show_bet_tai_4" class="txt">壹二三四五六七八九十(主)</div>
+                    </div>
+                    <div class="sel-points">
+                        <select id="show_bet_tai_money" name="show_bet_tai_money" onChange="money_odds();">
+                            <option value="0" class="placeholder" disabled selected>請選擇投注點數</option>
+                            <option value="4000">4000</option>
+                            <option value="6000">6000</option>
+                            <option value="10000">10000</option>
+                        </select>
+                        <div id="money_win" name="money_win" class="msg">可贏點數：0</div>
+                        <input type="hidden" id="show_bet_tai_5" name="show_bet_tai_5" value="">
+                        <input type="hidden" id="show_bet_tai_6" name="show_bet_tai_6" value="">
+                        <input type="hidden" id="show_bet_tai_7" name="show_bet_tai_7" value="">
+                        <input type="hidden" id="show_gameid" name="show_gameid" value="">
+                        <input type="hidden" id="show_wodds" name="show_wodds" value="">
+                        <input type="checkbox" id="npaid" name="npaid" value="1"> 免費開放閱覽
+                    </div>
+                    <div class="btn-main">
+                        <button onClick="save_betting(this);" class="btn btn-block">確認送出</button>
+                        <button class="p-fir submit show_hide"></button>
+                    </div>
+                </div>
+
+                <div class="step-success">
+                    <h4 class="modal-title"><span class="mask"></span></h4>
+                    <div class="messenge">
+                        <div class="result">
+                            <div class="photo"></div>
+                            <div class="txt">投注成功</div>
+                        </div>
+                        <p>請至我的預測查看明細</p>
+                    </div>
+                    <div class="btn-main">
+                        <button onClick="document.location.href='index.html?uid='" class="btn btn-block p-sec">看我的預測
+                        </button>
+                        <button class="btn btn-block p-fir continue" data-dismiss="modal" aria-label="Close"
+                                onClick="document.location.href=document.location.href">繼續投注
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="show_bet_int" name="show_bet_int" data-toggle="modal" data-target="#modal-bet-int"></div>
+<div class="modal fade md-pre md-betting bet-int" id="modal-bet-int" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+
+                <div class="step-bet active">
+                    <h4 class="modal-title"><span>NBA-全場讓分</span><span class="mask"></span></h4>
+                    <div class="battle">
+                        <div class="item team">夏洛特黃蜂</div>
+                        <div class="item">V.S.</div>
+                        <div class="item team">明尼蘇達灰狼(主)</div>
+                    </div>
+                    <div class="ur-bet">
+                        <div class="icon">投注</div>
+                        <div class="txt">大分 203.5<span class="odds">賠率1.95</span></div>
+                    </div>
+                    <div class="sel-points">
+                        <select name="" id="">
+                            <option value="" class="placeholder" disabled selected>請選擇投注點數</option>
+                            <option value="">4000</option>
+                            <option value="">6000</option>
+                            <option value="">10000</option>
+                        </select>
+                        <div class="msg">可贏點數：9500</div>
+                    </div>
+                    <div class="btn-main">
+                        <button onClick="" class="btn btn-block p-fir submit">確認送出</button>
+                    </div>
+                </div>
+
+                <div class="step-success">
+                    <h4 class="modal-title"><span class="mask"></span></h4>
+                    <div class="messenge">
+                        <div class="result">
+                            <div class="photo"></div>
+                            <div class="txt">投注成功</div>
+                        </div>
+                        <p>請至我的預測查看明細</p>
+                    </div>
+                    <div class="btn-main">
+                        <button onClick="" class="btn btn-block p-sec">看我的預測</button>
+                        <button onClick="" class="btn btn-block p-fir continue" data-dismiss="modal" aria-label="Close">
+                            繼續投注
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade md-fil-sub fil-2nd" id="modal-fil-2nd" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4 class="modal-title"><span>選擇聯盟</span></h4>
+                <div class="container">
+                    <ul id="sballgame_m" name="sballgame_m">
+                    </ul>
+                    <div class="btn-main">
+                        <button onClick="m_game_click();" class="btn btn-block" data-dismiss="modal" aria-label="Close">
+                            送出
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade md-fil-sub fil-3rd" id="modal-fil-3rd" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4 class="modal-title"><span>選擇玩法</span></h4>
+                <div class="container">
+                    <ul>
+                        <li class="current">
+                            <div class="main">
+                                <div class="txtbox"><span class="txt">全部</span><span class="amo">99</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main">
+                                <div class="txtbox"><span class="txt">下半場</span><span class="amo">1</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main">
+                                <div class="txtbox"><span class="txt">壹二三四五</span><span class="amo">999</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-main">
+                        <button onClick="" class="btn btn-block" data-dismiss="modal" aria-label="Close">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="modal fade md-pre conditions" id="modal-pre-conditions" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+
+                    <h4 class="modal-title"><span>賽事預測規則</span></h4>
+                    <ol>
+                        <li>每周給予10萬點數投注</li>
+                        <li>每天每個聯賽最多使用2萬點</li>
+                        <li>主推一注最多1萬點，一天同一聯賽只能一場主推</li>
+                        <li>投注須按1萬、6000、4000的比例規定</li>
+                        <li>當周點數用完不補直到下周重新開始</li>
+                        <li>每周獲利點數歸零不累計</li>
+                        <li>上一周獲利或近兩周加總獲利，即自動可獲得向會員販售運彩推薦的資格</li>
+                        <li>詳細盤口規則可加入官方@Line : @wwincat 詢問</li>
+                        <li>投注明細請到個人頁面<a href="javascript:;" onClick="$('#login').click()">「我的預測」</a>閱覽</li>
+                        <li>本盤口與國際盤口Pinnacle 同步，每5分鐘更新一次。Pinnacle 為台灣運彩的盤口主要參考來源。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade md-pre md-event" id="modal-evt-condition" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <h4 class="modal-title"><span>運彩貓 – 我是運彩王</span><span class="mask"></span></h4>
+                <h5 class="subttl">活動說明</h5>
+                <ol class="mgb-L">
+                    <li>完全免費參加</li>
+                    <li>每周結算，依據虛擬投注獲利總額統計出該周運彩王</li>
+                    <li>每周前3名獎金 : 5000、3000、2000台幣</li>
+                    <li>第 4-10 名 : 各獲得 600 的Line點數</li>
+                    <li>排名請至「民間高手」頁面瀏覽</li>
+                    <li>獲利金額相同時參加場次較多者排在前面</li>
+                    <li>上一周獲利或近兩周加總獲利，即可自動在民間高手區獲得向會員販售運彩推薦的資格</li>
+                </ol>
+                <h5 class="subttl">玩法說明</h5>
+                <ol class="mgb-L">
+                    <li>讓分 : 猜對戰球隊誰勝誰負</li>
+                    <li>大小 : 猜對戰球隊兩隊得分加總高於還是低於盤口</li>
+                    <li>
+                        賠率說明 : <br>
+                        <ul>
+                            <li>台式國際盤 : 賠率一律1.95不會變動 (投注100獲利連本金拿回195 )</li>
+                            <li>運彩國際盤 : 賠率與世界國際盤口同步</li>
+                        </ul>
+                    </li>
+                    <li>盤口說明 : 請洽運彩貓客服 Line ID : @wwincat</li>
+                </ol>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="modal fade modal-cat md-pre conditions" id="modal-slist-conditions" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title"><span>條件與帳戶資訊</span></h4>
+                    <ol>
+                        <li>賣牌所得平台抽50%會員抽50%</li>
+                        <li>會員賣牌所得每月15號統一匯款到指定帳號</li>
+                        <li>單月賣牌收入要超過3000台幣才會匯款，未達3000 將累積到下個月直到超過3000台幣</li>
+                    </ol>
+                    <div class="bank-info">
+                        <div class="title">我的帳戶資訊</div>
+                        <div class="content">
+                            <div class="formMain">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 thead"><label
+                                                for="naccount_name">戶名</label></div>
+                                        <div class="col-xs-12 col-sm-9 col-md-9 tbody"><input type="text"
+                                                                                              class="form-control"
+                                                                                              id="naccount_name"
+                                                                                              name="naccount_name"
+                                                                                              placeholder="請輸入正確戶名"
+                                                                                              value=""></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 thead"><label for="nbank_name">銀行名稱<br>或郵局</label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9 col-md-9 tbody"><input type="text"
+                                                                                              class="form-control"
+                                                                                              id="nbank_name"
+                                                                                              name="nbank_name"
+                                                                                              placeholder="請輸入銀行名稱或郵局"
+                                                                                              value=""></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 thead"><label for="nbranch">分行</label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9 col-md-9 tbody"><input type="text"
+                                                                                              class="form-control"
+                                                                                              id="nbranch"
+                                                                                              name="nbranch"
+                                                                                              placeholder="請輸入分行"
+                                                                                              value=""></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 thead"><label
+                                                for="naccount_number">帳號</label></div>
+                                        <div class="col-xs-12 col-sm-9 col-md-9 tbody"><input type="text"
+                                                                                              class="form-control"
+                                                                                              id="naccount_number"
+                                                                                              name="naccount_number"
+                                                                                              placeholder="請輸入正確帳號"
+                                                                                              value=""></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                                            <button type="button" class="btn btn-block" onclick="togForm();">確認送出
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tableMain">
+                                <button type="button" class="btn-edit" onclick="togForm();">修改帳戶資料</button>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-3 col-md-3 thead">戶名</div>
+                                    <div class="col-xs-8 col-sm-9 col-md-9 tbody"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-3 col-md-3 thead">銀行名稱<br>或郵局</div>
+                                    <div class="col-xs-8 col-sm-9 col-md-9 tbody"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-3 col-md-3 thead">分行</div>
+                                    <div class="col-xs-8 col-sm-9 col-md-9 tbody"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-3 col-md-3 thead">帳號</div>
+                                    <div class="col-xs-8 col-sm-9 col-md-9 tbody"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function togForm() {
+        if ($(".bank-info").hasClass("edit-mode")) {
+            if ($('#naccount_name').val() == '' || $('#nbank_name').val() == '' || $('#nbranch').val() == '' || $('#naccount_number').val() == '') {
+                message_fun('請輸入帳戶資訊');
+            } else {
+                $.ajax({
+                    url: 'slist_save',
+                    data: {
+                        'naccount_name': $('#naccount_name').val(),
+                        'nbank_name': $('#nbank_name').val(),
+                        'nbranch': $('#nbranch').val(),
+                        'naccount_number': $('#naccount_number').val()
+                    },
+                    type: 'POST',
+                    dataType: 'text'
+                }).error(function (data) {
+                    message_fun('傳輸錯誤!!');
+                }).success(function (data) {
+                    if (data == '1') {
+                        message_fun('資料儲存成功');
+                        $('.tableMain .tbody').eq(0).html($('#naccount_name').val());
+                        $('.tableMain .tbody').eq(1).html($('#nbank_name').val());
+                        $('.tableMain .tbody').eq(2).html($('#nbranch').val());
+                        $('.tableMain .tbody').eq(3).html($('#naccount_number').val());
+                        $(".bank-info").removeClass("edit-mode");
+                    } else {
+                        message_fun('資料儲存失敗');
+                    }
+                });
+            }
+        } else {
+            $(".bank-info").addClass("edit-mode");
+        }
+    }
+</script>
+
+<div class="modal fade" id="modal-cat" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <form id="tform1" name="tform1" method="POST" action="#" class="show_hide">
+                            <input type="hidden" id="f1_url" name="f1_url"
+                                   value="https://wwincat.com/welcome/account_login">
+                            <input type="hidden" id="fb_check" name="fb_check" value="0">
+                            <div class="form-group">
+                                <input type="text" id="laccount" name="laccount" class="form-control icon icon-user"
+                                       placeholder="6~12字英文數字組合" maxlength="12" pattern="[0-9A-Za-z]{6,12}" required>
+                                <label>帳號</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="lpassword" name="lpassword"
+                                       class="form-control icon icon-psw" placeholder="6~12字英文數字組合" maxlength="12"
+                                       pattern="[0-9A-Za-z]{6,12}" required>
+                                <label>密碼</label>
+                                <p class="forget">忘記密碼 <i class="fa fa-question-circle" aria-hidden="true"></i></p>
+                            </div>
+                            <button type="submit" class="btn btn-block">登入</button>
+                            <hr data-title="快速登入 ▼">
+                            <!--utton onClick="document.location.href='https://www.facebook.com/v3.0/dialog/oauth?client_id=204446836628654&amp;state=5fa7ae0b0854528c5860856c3f511476&amp;response_type=code&amp;sdk=php-sdk-5.4.4&amp;redirect_uri=https%3A%2F%2Fwwincat.com%2Fwelcome%2Ffb_in&amp;scope=email%2Cpublic_profile';"
+                                    type="button" class="btn btn-block btn-fb">Facebook 登入
+                            </button-->
+                            <p class="text-center">
+                                還不是會員? <a
+                                    onclick="$('#tform1').addClass('show_hide');$('#tform3').removeClass('show_hide');"
+                                    href="javascript:;">點此註冊</a>
+                            </p>
+                        </form>
+                        <form id="tform2" name="tform2" method="POST" action="#" class="show_hide">
+                            <input type="hidden" id="f2_url1" name="f2_url1" value="welcome/phone_send.html">
+                            <input type="hidden" id="f2_url2" name="f2_url2" value="welcome/phone_check.html">
+                            <h3>手機驗證碼</h3>
+                            <div class="form-group">
+                                <div class="form-group phone-group">
+                                    <input type="text" id="f2_phone" name="f2_phone" class="form-control"
+                                           pattern="[0-9]{10,20}">
+                                    <label>請輸入手機號碼</label>
+                                    <button onClick="phone_send()" class="btn">取得驗證碼</button>
+                                </div>
+                                <p>非台灣用戶請加入官方<a href="cdn-cgi/l/email-protection.html" class="__cf_email__"
+                                                data-cfemail="5c303532391c">[email&#160;protected]</a>由專人為您進行帳號驗證服務</p>
+                                <input type="text" id="f2_code" name="f2_code" class="form-control" placeholder="請輸入驗證碼"
+                                       pattern="[A-Z0-9]{6}" required>
+                                <label>驗證碼</label>
+
+                            </div>
+                            <button type="submit" class="btn btn-block">送出驗證碼</button>
+                        </form>
+                        <form id="tform3" name="tform3" method="POST" action="#" class="show_hide">
+                            <input type="hidden" id="f3_url" name="f3_url" value="welcome/account_join.html">
+                            <div class="form-group">
+                                <input type="text" id="fbname" name="fbname" class="form-control icon icon-name"
+                                       data-label="暱稱" placeholder="最多輸入8個字" maxlength="8" required>
+                                <label>暱稱</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="naccount" name="naccount" class="form-control icon icon-user"
+                                       placeholder="6~12字英文數字組合" maxlength="12" pattern="[0-9A-Za-z]{6,12}" required>
+                                <label>帳號</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="npassword1" name="npassword1"
+                                       class="form-control icon icon-psw" placeholder="6~12字英文數字組合" maxlength="12"
+                                       pattern="[0-9A-Za-z]{6,12}" required>
+                                <label>密碼</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="npassword2" name="npassword2" class="form-control"
+                                       placeholder="請再次輸入密碼" required>
+                                <label>確認密碼</label>
+
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="ncheck" name="ncheck" value="1"> 我接受<a
+                                        href="privacy.html" target="_blank">運彩貓會員條款</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-block">申請加入</button>
+                            <hr data-title="一鍵註冊 ▼">
+                            <button onClick="document.location.href='https://www.facebook.com/v3.0/dialog/oauth?client_id=204446836628654&amp;state=5fa7ae0b0854528c5860856c3f511476&amp;response_type=code&amp;sdk=php-sdk-5.4.4&amp;redirect_uri=https%3A%2F%2Fwwincat.com%2Fwelcome%2Ffb_in&amp;scope=email%2Cpublic_profile';"
+                                    type="button" class="btn btn-block btn-fb">Facebook 註冊
+                            </button>
+                            <p class="text-center">
+                                已經是會員? <a
+                                    onclick="$('#tform3').addClass('show_hide');$('#tform1').removeClass('show_hide');"
+                                    href="javascript:;">點此登入</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="show_button" name="show_button" data-toggle="modal" data-target="#show_message"></div>
+<div class="modal fade" id="show_message" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        onClick="reload_fun()"></button>
+                <p id="message_value" name="message_value"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-info" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="line-qr" class="overlay01">
+    <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <img class="img-responsive popupimg" src='images/S__32669783.jpg'>
+        </div>
+    </div>
+</div>
+<form id="fform1" name="fform1" method="POST" action="https://wwincat.com/welcome/fb_in">
+    <input type="hidden" id="fb_url" name="fb_url" value="predict.html">
+    <input type="hidden" id="fb_id" name="fb_id" value="">
+    <input type="hidden" id="fb_name" name="fb_name" value="">
+</form>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/circle-progress.min.js"></script>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".md-betting button.submit").on('click touch', function () {
+            $(this).parents(".modal").find(".step-bet").removeClass("active");
+            $(this).parents(".modal").find(".step-success").addClass("active");
+        });
+        $(".md-betting button.continue, .md-betting button.close").on('click touch', function () {
+            $(this).parents(".modal").find(".step-success").removeClass("active");
+            $(this).parents(".modal").find(".step-bet").addClass("active");
+        });
+    });
+</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-90328224-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+</html>

@@ -1,0 +1,1398 @@
+@charset "UTF-8";
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, .3)
+}
+
+select, button, .btn {
+    outline: none !important
+}
+
+section {
+    font-family: noto sans tc, lato, sans-serif;
+    letter-spacing: 0;
+    font-weight: 400
+}
+
+section span.plus {
+    color: #62c60f
+}
+
+section span.minus {
+    color: #ff9336
+}
+
+section .dk, section .mb {
+    display: none
+}
+
+section.title {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(to top, #00011b, #00011b);
+    background: linear-gradient(to top, #00011b, #00011b)
+}
+
+section.title .container {
+    position: relative;
+    padding: 0
+}
+
+section.title h3.styled {
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    background: url(../images/ttl_master.png) no-repeat 50% 50%;
+    background-size: auto 100%
+}
+
+section.title .mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:-9px;
+    width: 100%;
+    height: 42px;
+    background: url(../images/m_ttl_cv_mask_f6f6f6.png) no-repeat 50% 100%;
+    background-size: 100% 100%
+}
+
+section.content {
+    min-height: calc(100vh - 176px);
+    background: #060721;
+}
+
+section.content .my-rank {
+    position: relative;
+    width: 100%;
+    margin-bottom: 35px
+}
+
+section.content .my-rank:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    border-radius: 6px;
+    background: -webkit-linear-gradient(to right, #ffa61e, #ff9412);
+    background: linear-gradient(to right, #ffa61e, #ff9412);
+    z-index: 1
+}
+
+section.content .my-main {
+    position: relative;
+    top: 6px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 12px;
+    background: -webkit-linear-gradient(to bottom, #fff, #fffcf0);
+    background: linear-gradient(to bottom, #fff, #fffcf0);
+    z-index: 2
+}
+
+section.content .my-main:after {
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 13px;
+    background: url(../images/filter/m_filter_shadow.png) no-repeat 50% 50%;
+    background-size: 100% 100%
+}
+
+section.content .my-main .ctrl {
+}
+
+section.content .my-main .ctrl .btn-arrow {
+    position: absolute;
+    left: calc(9.6% - 42px);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 25px;
+    padding: 0;
+    background: url(../images/icon_arrow_or.png) no-repeat 50% 50%;
+    background-size: 22px auto;
+    z-index: 999
+}
+
+section.content .my-main .ctrl .btn-arrow.arrow-up {
+    top: 0;
+    -webkit-transform: translateX(-50%) rotate(-180deg);
+    transform: translateX(-50%) rotate(-180deg)
+}
+
+section.content .my-main .ctrl .btn-arrow.arrow-dn {
+    bottom: 0
+}
+
+section.content .my-main .ctrl .tooltip-inner {
+    white-space: nowrap;
+    background: #ff6000
+}
+
+section.content .my-main .ctrl .tooltip-arrow {
+    border-right-color: #ff6000
+}
+
+section.content .my-main .my-table {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 2
+}
+
+section.content .my-main .my-table.current {
+    opacity: 1;
+    visibility: visible
+}
+
+section.content .my-main .my-table.me {
+    position: relative
+}
+
+section.content .my-main .my-table.af, section.content .my-main .my-table.bf {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+section.content .my-main .my-table.me .username {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: #fff
+}
+
+section.content .my-main .my-table .th {
+    color: #fff
+}
+
+section.content .my-main .my-table .col-1st .th {
+    color: #444
+}
+
+section.content .my-main .my-table.me .col-1st .th {
+    color: #ff9336
+}
+
+section.content .my-main .my-table .col-3rd .th {
+    background: #77dc24
+}
+
+section.content .my-main .my-table .col-4th .th {
+    background: #45731c
+}
+
+section.content .my-main .my-table .col-5th .th {
+    background: #335317
+}
+
+section.content .my-main .my-table .td {
+    font-size: 13px;
+    font-weight: 700
+}
+
+section.content .my-main .my-table .col-1st .td {
+    font-size: 26px;
+    color: #444
+}
+
+section.content .my-main .my-table.me .col-1st .td {
+    font-size: 32px;
+    color: #ff9336
+}
+
+section.content .my-main .my-table .col-1st .td span {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px
+}
+
+section.content .my-main .my-table.me .col-1st .td span {
+    margin: 0 14px
+}
+
+section.content .my-main .my-table.me .col-1st .td span:after, section.content .my-main .my-table.me .col-1st .td span:before {
+    position: absolute;
+    content: '';
+    display: block
+}
+
+section.content .my-main .my-table .col-1st .td span:before {
+    left: -10px;
+    top: 8px;
+    width: 7px;
+    height: 7px;
+    background: url(../images/deco_spark_1.png) no-repeat 50% 50%;
+    background-size: 7px auto
+}
+
+section.content .my-main .my-table .col-1st .td span:after {
+    right: -14px;
+    top: 0;
+    width: 14px;
+    height: 22px;
+    background: url(../images/deco_spark_2.png) no-repeat 50% 50%;
+    background-size: 14px auto
+}
+
+section.content .my-main .my-table .col-3rd .td {
+    color: #77dc24
+}
+
+section.content .my-main .my-table .col-4th .td {
+    color: #45731c
+}
+
+section.content .my-main .my-table .col-5th .td {
+    color: #335317
+}
+
+section.content .mas-table .list-order {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center
+}
+
+section.content .mas-table .list-order .ttl {
+    position: relative;
+    white-space: nowrap;
+    padding-right: 20px;
+    display: flex;
+    align-items: center
+}
+
+section.content .mas-table .list-order .ttl:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: -webkit-translate(0%, -50%);
+    transform: translate(0%, -50%);
+    content: '';
+    width: 1px;
+    height: 16px;
+    border-right: dotted 1px #aaa
+}
+
+section.content .mas-table .list-order .ttl .icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/icon_orders.png) no-repeat 50% 50%;
+    background-size: 100% auto;
+    margin-right: 8px
+}
+
+section.content .mas-table .list-order ul {
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+section.content .mas-table .list-order ul li {
+    position: relative;
+    padding: 0 20px;
+    opacity: .6;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+section.content .mas-table .list-order ul li:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #ff9336;
+    opacity: 0
+}
+
+section.content .mas-table .list-order ul li, section.content .mas-table .list-order ul li:after {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+section.content .mas-table .list-order ul li {
+    opacity: .6
+}
+
+section.content .mas-table .list-order ul li:after {
+    opacity: 0
+}
+
+section.content .mas-table .list-order ul li.current {
+    color: #ff9336;
+    opacity: 1
+}
+
+section.content .mas-table .list-order ul li.current:after {
+    opacity: 1
+}
+
+section.content .mas-table {
+    letter-spacing: 0
+}
+
+section.content .mas-table ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+section.content .mas-table .tbody .m-row-bm .col-3rd .row-pl {
+    color: #92e350
+}
+
+section.content .mas-table .tbody .m-row-bm .col-4th .row-pl {
+    color: #6a8f49
+}
+
+section.content .mas-table .tbody .m-row-bm .col-5th .row-pl {
+    color: #5c7545
+}
+
+section.content .mas-table .tbody li.gold .m-row-tp .col-1st, section.content .mas-table .tbody li.silver .m-row-tp .col-1st, section.content .mas-table .tbody li.bronze .m-row-tp .col-1st {
+    color: #ff6000
+}
+
+section.content .mas-table .tbody li.gold .m-row-tp .col-1st:after, section.content .mas-table .tbody li.silver .m-row-tp .col-1st:after, section.content .mas-table .tbody li.bronze .m-row-tp .col-1st:after {
+    content: '';
+    display: inline-block;
+    background: url(../images/icon_reward.png) no-repeat 50% 50%;
+    margin-left: 2px
+}
+
+section.content .gnr-pages {
+}
+
+section.content .gnr-pages .type-in {
+    display: inline-block;
+    font-size: 15px;
+    color: #444;
+    margin-right: 10px
+}
+
+section.content .gnr-pages .type-in input {
+    width: 3em;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 4px;
+    border: 1px #f1f1f1 solid;
+    outline: none;
+    margin: 0 5px
+}
+
+section.content .gnr-pages .type-in input:focus {
+    border-color: #999;
+    background: #fff
+}
+
+section.content .gnr-pages ul.pager {
+    margin: 0
+}
+
+section.content .gnr-pages ul.pager li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 5;
+    margin: 0 2px
+}
+
+section.content .gnr-pages ul.pager li a {
+    background: #888;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    line-height: 32px;
+    padding: 0 12.5px 0 2.5px;
+    text-align: center
+}
+
+section.content .gnr-pages ul.pager li.disabled a {
+    background: #ccc
+}
+
+section.content .gnr-pages ul.pager li.next a {
+    padding: 0 2.5px 0 12.5px
+}
+
+@media (max-width: 991px) {
+    #page-content-wrapper {
+        padding-bottom: 50px
+    }
+
+    a#gotop {
+        margin-top: 0
+    }
+
+    section .mb {
+        display: block
+    }
+
+    section.title .conditions {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        overflow: hidden;
+        font-size: 0;
+        line-height: 0;
+        cursor: pointer;
+        z-index: 10
+    }
+
+    section.title .conditions:after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        display: block;
+        background: url(../images/icon_question_gy.png) no-repeat 50% 50%;
+        background-size: cover
+    }
+
+    section.content {
+        position: relative;
+        padding-top: 8px;
+        padding-bottom: 10px
+    }
+
+    section.content .my-main .ctrl .tooltip {
+        display: none !important
+    }
+
+    section.content .my-main .ctrl {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0
+    }
+
+    section.content .my-main .ctrl .btn-arrow {
+        left: 50%;
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%)
+    }
+
+    section.content .my-main .ctrl .btn-arrow.arrow-up {
+        -webkit-transform: translate(-50%, 0%) rotate(-180deg);
+        transform: translate(-50%, 0%) rotate(-180deg)
+    }
+
+    section.content .my-main .my-table {
+        padding: 30px 15px
+    }
+
+    section.content .my-main .my-table .username {
+        width: auto;
+        max-width: 6em;
+        height: auto;
+        font-size: 18px;
+        font-style: italic;
+        padding: 0 5px;
+        color: #222
+    }
+
+    section.content .my-main .my-table.me .username {
+        font-size: 18px;
+        font-style: italic;
+        color: #222
+    }
+
+    section.content .my-main .my-table .recom {
+        display: none
+    }
+
+    section.content .my-main .my-table .m-row-tp, section.content .my-main .my-table .m-row-bm {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center
+    }
+
+    section.content .my-main .my-table .col-3rd, section.content .my-main .my-table .col-4th {
+        width: calc(100% / 3 - 10px);
+        white-space: nowrap
+    }
+
+    section.content .my-main .my-table .col-5th {
+        width: calc(100% / 3 + 20px);
+        white-space: nowrap
+    }
+
+    section.content .my-main .my-table .m-row-tp {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px
+    }
+
+    section.content .my-main .my-table .col-2nd {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%)
+    }
+
+    section.content .my-main .my-table .col-1st {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center
+    }
+
+    section.content .my-main .my-table .m-recom a {
+        width: auto;
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 1.2em;
+        padding: 6px 10px;
+        border-radius: 6px;
+        color: #fff;
+        text-align: left;
+        background: #ff6000
+    }
+
+    section.content .my-main .my-table .m-recom a.disable {
+        background: #ccc;
+        letter-spacing: 3px;
+        pointer-events: none
+    }
+
+    section.content .my-main .my-table .m-recom a > i {
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 6px
+    }
+
+    section.content .my-main .my-table .m-recom a.disable > i {
+        display: none
+    }
+
+    section.content .mas-table .list-order {
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px
+    }
+
+    section.content .mas-table .list-order:after {
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+        right: 0;
+        content: '';
+        width: 100%;
+        height: 13px;
+        background: url(../images/filter/m_filter_shadow.png) no-repeat 50% 50%;
+        background-size: 100% 100%;
+        opacity: .4
+    }
+
+    section.content .mas-table .list-order .ttl {
+        padding-right: 10px
+    }
+
+    section.content .mas-table .list-order ul li {
+        width: calc(100% / 3);
+        padding: 0 10px;
+        text-align: center
+    }
+
+    section.content .mas-table {
+        position: relative;
+        background: #060721;
+        border-radius: 4px;
+        margin-bottom: 13px
+    }
+
+    section.content .mas-table .tbody {
+        width: 100%;
+        padding: 15px
+    }
+
+    section.content .mas-table:after {
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+        right: 0;
+        content: '';
+        width: 100%;
+        height: 13px;
+        background: url(../images/filter/m_filter_shadow.png) no-repeat 50% 50%;
+        background-size: 100% 100%
+    }
+
+    section.content .mas-table .tbody ul li {
+        position: relative;
+        padding-bottom: 30px
+    }
+
+    section.content .mas-table .tbody ul li:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: -webkit-linear-gradient(left, #eeeeee 0%, #cccccc 20%, #cccccc 80%, #eeeeee 100%);
+        background: linear-gradient(to right, #eeeeee 0%, #cccccc 20%, #cccccc 80%, #eeeeee 100%)
+    }
+
+    section.content .mas-table .tbody ul li:last-child {
+        padding-bottom: 0
+    }
+
+    section.content .mas-table .tbody ul li:last-child:after {
+        display: none
+    }
+
+    section.content .mas-table .tbody .m-row-tp {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px
+    }
+
+    section.content .mas-table .tbody .m-row-tp .col-1st {
+        min-width: 42px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.2em;
+        color: #666;
+        text-align: left
+    }
+
+    section.content .mas-table .tbody li.gold .m-row-tp .col-1st:after, section.content .mas-table .tbody li.silver .m-row-tp .col-1st:after, section.content .mas-table .tbody li.bronze .m-row-tp .col-1st:after {
+        width: 17px;
+        height: 17px;
+        background-size: 17px auto
+    }
+
+    section.content .mas-table .tbody li.gold .m-row-tp .col-1st:after {
+        background-position: 0 0
+    }
+
+    section.content .mas-table .tbody li.silver .m-row-tp .col-1st:after {
+        background-position: 0 -17px
+    }
+
+    section.content .mas-table .tbody li.bronze .m-row-tp .col-1st:after {
+        background-position: 0 -34px
+    }
+
+    section.content .mas-table .tbody .m-row-tp .col-2nd {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.2em;
+        color: #222;
+        text-align: left
+    }
+
+    section.content .mas-table .tbody .m-row-tp .m-recom a {
+        width: auto;
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 1.2em;
+        padding: 6px 10px;
+        border-radius: 6px;
+        color: #fff;
+        text-align: left;
+        background: #ff6000
+    }
+
+    section.content .mas-table .tbody .m-row-tp .m-recom a.disable {
+        background: #2c2e66;
+        letter-spacing: 3px;
+        pointer-events: none
+    }
+
+    section.content .mas-table .tbody .m-row-tp .m-recom a > i {
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 6px
+    }
+
+    section.content .mas-table .tbody .m-row-tp .m-recom a.disable > i {
+        display: none
+    }
+
+    section.content .mas-table .tbody .m-row-bm {
+        padding-left: 42px;
+        display: flex;
+        align-items: flex-start
+    }
+
+    section.content .mas-table .tbody .m-row-bm .m-th, section.content .mas-table .tbody .m-row-bm .m-th .row-tp {
+        width: 30px
+    }
+
+    section.content .mas-table .tbody .m-row-bm .m-td {
+        width: calc(100% / 3)
+    }
+
+    section.content .mas-table .tbody .m-row-bm .col-6th {
+        display: none
+    }
+
+    section.content .mas-table .tbody .m-row-bm .row-tp {
+        position: relative;
+        background: #060721;
+        height: 27px;
+        margin-bottom: 5px;
+        font-size: 13px;
+        color: #fff;
+        text-align: center
+    }
+
+    section.content .mas-table .tbody .m-row-bm .m-th .row-tp:after {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: -webkit-translate(0%, -50%);
+        transform: translate(0%, -50%);
+        content: '';
+        width: 1px;
+        height: 13px;
+        border-right: dotted 1px #45731c
+    }
+
+    section.content .mas-table .tbody .m-row-bm .col-3rd .row-tp {
+        /*background: #92e350
+    }
+
+    section.content .mas-table .tbody .m-row-bm .col-4th .row-tp {
+        background: #6a8f49
+    }
+
+    section.content .mas-table .tbody .m-row-bm .col-5th .row-tp {
+        /*background: #5c7545*/
+    }
+
+    section.content .mas-table .tbody .m-row-bm .m-th .row-pl {
+        padding: 0 3px;
+        font-size: 12px;
+        line-height: 1.2em;
+        color: #888;
+        text-align: center;
+        display: flex;
+        align-items: center
+    }
+
+    section.content .mas-table .tbody .m-row-bm .row-pl {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    section.content .mas-table .tbody .m-row-bm .row-pl.res-1 {
+        background: #060721;
+    }
+
+    section.content .mas-table .tbody .m-row-bm .row-pl.res-2 {
+        background: #060721;
+    }
+
+    section.content .mas-table .tbody .m-row-bm .m-td .row-pl {
+        font-size: 13px;
+        font-weight: 700
+    }
+
+    section.content .gnr-pages {
+        position: relative;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 10px
+    }
+
+    section.content .gnr-pages .type-in {
+        position: absolute;
+        font-size: 13px;
+        color: #888;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%)
+    }
+
+    section.content .gnr-pages .type-in input {
+        background: #fff;
+        pointer-events: none
+    }
+
+    section.content .gnr-pages ul.pager li {
+    }
+
+    section.content .gnr-pages ul.pager li {
+        width: 50%
+    }
+}
+
+@media (min-width: 992px) {
+    section .dk {
+        display: block
+    }
+
+    section.title .mask {
+        width: 100%;
+        height: 50px;
+        background: url(../images/ttl_cv_mask_f6f6f6.png) no-repeat 50% 100%;
+        background-size: 1366px 100%
+    }
+
+    footer, section.content {
+        background: #f6f6f6;
+        background-image: url("../images/bg4.png");
+    }
+
+    footer {
+        margin-top: 0;
+        padding-top: 90px
+    }
+
+    section.content .filter-sub ul.fil-2nd {
+        margin-left: -15px;
+        color: #000;
+    }
+
+    section.title, section.title h3.styled {
+        height: 110px
+    }
+
+    section.content .container {
+        position: relative;
+        background: #00011b;
+        border-radius: 4px;
+        padding-top: 36px;
+        padding-bottom: 40px
+    }
+
+    section.content .conditions {
+        position: absolute;
+        right: 10px;
+        top: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 5px #fff solid;
+        overflow: hidden;
+        font-size: 0;
+        line-height: 0;
+        cursor: pointer
+    }
+
+    section.content .conditions:after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        display: block;
+        background: url(../images/icon_question_gy.png) no-repeat 50% 50%;
+        background-size: cover
+    }
+
+    section.content .my-main {
+        font-size: 14px
+    }
+
+    section.content .my-main .my-table {
+        width: 100%;
+        padding: 16px 0;
+        display: flex;
+        align-items: center
+    }
+
+    section.content .my-main .my-table .m-recom {
+        display: none
+    }
+
+    section.content .my-main .my-table .m-row-tp, section.content .my-main .my-table .m-row-bm {
+        display: flex;
+        align-items: center;
+        text-align: center
+    }
+
+    section.content .my-main .my-table .m-row-tp {
+        width: 30%;
+        flex-direction: row-reverse
+    }
+
+    section.content .my-main .my-table .m-row-bm {
+        width: 70%
+    }
+
+    section.content .my-main .my-table .col-2nd {
+        min-width: 6em;
+        padding-right: 8px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    section.content .my-main .my-table .col-1st {
+        width: 68%;
+        padding-left: 8px
+    }
+
+    section.content .my-main .my-table .col-3rd, section.content .my-main .my-table .col-4th, section.content .my-main .my-table .col-5th {
+        width: calc(100% / 3);
+        text-align: center;
+        padding-left: 8px
+    }
+
+    section.content .my-main .my-table .col-6th {
+        width: 160px
+    }
+
+    section.content .my-main .my-table .td {
+        height: 40px;
+        line-height: 40px
+    }
+
+    section.content .my-main .my-table .th {
+        color: #fff;
+        white-space: nowrap
+    }
+
+    section.content .my-main .my-table .username {
+        width: auto;
+        max-width: 6em;
+        max-height: 3em;
+        overflow: hidden;
+        height: auto;
+        font-size: 14px;
+        color: #222
+    }
+
+    section.content .my-main .my-table .col-1st .th {
+        color: #fff;
+        background: #444
+    }
+
+    section.content .my-main .my-table.me .col-1st .th {
+        color: #fff;
+        background: #fecb26
+    }
+
+    section.content .my-main .my-table .col-1st .td span:before {
+        left: -10px;
+        top: 15px
+    }
+
+    section.content .my-main .my-table .col-1st .td span:after {
+        right: -14px;
+        top: 4px
+    }
+
+    section.content .my-main .my-table .recom a {
+        width: auto;
+        white-space: nowrap;
+        font-size: 16px;
+        line-height: 1.2em;
+        padding: 6px 10px;
+        border-radius: 6px;
+        color: #ff9336;
+        text-align: left
+    }
+
+    section.content .my-main .my-table .recom a.disable {
+        color: #ccc;
+        letter-spacing: 2px;
+        pointer-events: none
+    }
+
+    section.content .my-main .my-table .recom a > i {
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        font-size: 22px;
+        margin-right: 6px
+    }
+
+    section.content .my-main .my-table .recom a.disable > i {
+        display: none
+    }
+
+    section.content .mas-table .list-order ul li {
+        opacity: .6
+    }
+
+    section.content .mas-table .list-order ul li:hover {
+        opacity: 1
+    }
+
+    section.content .mas-table .m-row-bm .m-th, section.content .mas-table .m-row-bm .m-td .ttl, section.content .mas-table .tbody .m-row-tp .m-recom {
+        display: none
+    }
+
+    section.content .mas-table .thead, section.content .mas-table .tbody li {
+        width: 100%;
+        display: flex;
+        align-items: center
+    }
+
+    section.content .mas-table .thead {
+        width: 100%;
+        height: 54px;
+        padding-top: 4px;
+        border-bottom: 1px #444 solid;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(0, 1, 27)), color-stop(35%, rgb(0, 1, 27)), color-stop(100%, rgb(0, 1, 27)));
+        background: -webkit-linear-gradient(top, rgb(0, 1, 27) 0%, rgb(0, 1, 27) 35%, rgb(0, 1, 27) 100%);
+        background: linear-gradient(to bottom, rgb(0, 1, 27) 0%, rgb(0, 1, 27) 35%, rgb(0, 1, 27) 100%)
+    }
+
+    section.content .mas-table .tbody ul {
+        padding-top: 10px
+    }
+
+    section.content .mas-table .tbody li {
+        width: 100%;
+        height: 60px;
+        padding-top: 5px;
+        font-size: 16px;
+        text-align: center;
+        border-bottom: 1px #eee solid
+    }
+
+    section.content .mas-table .m-row-tp {
+        width: 30%;
+        display: flex;
+        align-items: center
+    }
+
+    section.content .mas-table .m-row-bm {
+        width: 70%;
+        display: flex;
+        align-items: center
+    }
+
+    section.content .mas-table .col-1st {
+        width: 70px;
+        padding-left: 10px;
+        text-align: left
+    }
+
+    section.content .mas-table .col-2nd {
+        width: 100%
+    }
+
+    section.content .mas-table .col-3rd .main, section.content .mas-table .col-4th .main, section.content .mas-table .col-5th .main {
+        width: 100%
+    }
+
+    section.content .mas-table .col-3rd, section.content .mas-table .col-4th, section.content .mas-table .col-5th {
+        width: calc(100% / 3);
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 8px
+    }
+
+    section.content .mas-table .thead .col-3rd .sub, section.content .mas-table .thead .col-4th .sub, section.content .mas-table .thead .col-5th .sub {
+        width: 50%;
+        color: #fff
+    }
+
+    section.content .mas-table .thead .col-3rd .main {
+        color: #77dc24
+    }
+
+    section.content .mas-table .thead .col-3rd .res-1 {
+        background: #92e350
+    }
+
+    section.content .mas-table .thead .col-3rd .res-2 {
+        background: #77dc24
+    }
+
+    section.content .mas-table .thead .col-4th .main {
+        color: #45731c
+    }
+
+    section.content .mas-table .thead .col-4th .res-1 {
+        background: #6a8f49
+    }
+
+    section.content .mas-table .thead .col-4th .res-2 {
+        background: #45731c
+    }
+
+    section.content .mas-table .thead .col-5th .main {
+        color: #335317
+    }
+
+    section.content .mas-table .thead .col-5th .res-1 {
+        background: #5c7545
+    }
+
+    section.content .mas-table .thead .col-5th .res-2 {
+        background: #335317
+    }
+
+    section.content .mas-table .tbody .m-td .row-pl {
+        width: 50%
+    }
+
+    section.content .mas-table .col-6th {
+        width: 160px
+    }
+
+    section.content .mas-table .tbody .col-3rd .row-pl, section.content .mas-table .tbody .col-4th .row-pl, section.content .mas-table .tbody .col-5th .row-pl {
+        font-weight: 700
+    }
+
+    section.content .mas-table .tbody .m-row-tp .col-1st {
+        min-width: 60px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.2em;
+        font-style: italic;
+        color: #666
+    }
+
+    section.content .mas-table .tbody .recom a {
+        width: auto;
+        white-space: nowrap;
+        font-size: 16px;
+        line-height: 1.2em;
+        padding: 6px 10px;
+        border-radius: 6px;
+        color: #ff9336;
+        text-align: left
+    }
+
+    section.content .mas-table .tbody .recom a.disable {
+        color: #ccc;
+        letter-spacing: 2px;
+        pointer-events: none
+    }
+
+    section.content .mas-table .tbody .recom a > i {
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        font-size: 22px;
+        margin-right: 6px
+    }
+
+    section.content .mas-table .tbody .recom a.disable > i {
+        display: none
+    }
+
+    section.content .mas-table .tbody li.gold .m-row-tp .col-1st, section.content .mas-table .tbody li.silver .m-row-tp .col-1st, section.content .mas-table .tbody li.bronze .m-row-tp .col-1st {
+        position: relative;
+        font-size: 32px
+    }
+
+    section.content .mas-table .tbody li.gold .m-row-tp .col-1st:after, section.content .mas-table .tbody li.silver .m-row-tp .col-1st:after, section.content .mas-table .tbody li.bronze .m-row-tp .col-1st:after {
+        width: 25px;
+        height: 25px;
+        background-size: 25px auto;
+        margin-left: 4px
+    }
+
+    section.content .mas-table .tbody li.gold .m-row-tp .col-1st:after {
+        background-position: 0 0
+    }
+
+    section.content .mas-table .tbody li.silver .m-row-tp .col-1st:after {
+        background-position: 0 -25px
+    }
+
+    section.content .mas-table .tbody li.bronze .m-row-tp .col-1st:after {
+        background-position: 0 -50px
+    }
+
+    section.content .gnr-pages {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 30px
+    }
+
+    section.content .gnr-pages ul.pager li a:hover {
+        background: #444
+    }
+
+    section.content .my-main .ctrl .btn-arrow, section.content .mas-table .tbody .recom a, section.content .my-main .my-table .recom a {
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease
+    }
+
+    section.content .my-main .ctrl .btn-arrow {
+        opacity: .7
+    }
+
+    section.content .my-main .ctrl .btn-arrow:hover.arrow-up {
+        opacity: 1;
+        top: -4px
+    }
+
+    section.content .my-main .ctrl .btn-arrow:hover.arrow-dn {
+        opacity: 1;
+        bottom: -4px
+    }
+
+    section.content .my-main .my-table .recom a:hover, section.content .mas-table .tbody .recom a:hover {
+        color: #ff6000
+    }
+}
+
+@media (min-width: 1200px) {
+    section.title .mask {
+        background: url(../images/ttl_cv_mask_f6f6f6.png) no-repeat 50% 100%;
+        background-size: 100% 100%
+    }
+}
+
+.md-mas .modal-dialog {
+    width: calc(100% - 30px);
+    max-width: 550px;
+    margin: 30px auto;
+    border-radius: 4px;
+    overflow: initial
+}
+
+.md-mas .modal-body {
+    padding: 0;
+    padding-bottom: 20px
+}
+
+.md-mas .close {
+    display: block;
+    height: 34px;
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 34px;
+    z-index: 2
+}
+
+.md-mas .close:after, .md-mas .close:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #444;
+    content: "";
+    display: block;
+    z-index: 2;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.md-mas .close:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.md-mas .close:hover:after, .md-mas .close:hover:before {
+    background: #000
+}
+
+.md-mas .modal-title {
+    position: relative;
+    top: -2px;
+    padding: 25px 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(to top, #3F51B5, #03A9F4);
+    background: linear-gradient(to top, #3F51B5, #03A9F4);
+}
+
+.md-mas ol, .md-mas ul {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-right: 15px;
+    color: #444
+}
+
+.md-mas p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-right: 15px;
+    color: #444
+}
+
+.md-mas a {
+    position: relative;
+    display: inline-block;
+    color: #ff9412
+}
+
+.md-mas a:after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #ff9412
+}
+
+.md-mas a:active {
+    -webkit-tap-highlight-color: rgba(255, 148, 18, .2)
+}
+
+.md-mas ol li {
+    margin-bottom: 8px
+}
+
+@media (max-width: 767px) {
+    .md-mas.conditions ol {
+    }
+
+    .md-mas.conditions .modal-title {
+        padding: 15px
+    }
+}
